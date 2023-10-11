@@ -64,7 +64,7 @@ if uploaded_file is not None:
     font = ImageFont.truetype(font="./Keyboard.ttf", size=50)
     text_w, text_h = draw.textsize(caption, font=font)
     
-    draw.rectangle([(x, y), (x+w, y+h)], fill=None, outline="green", width=15)
+    draw.rectangle([(x, y), (x+w, y+h)], fill=None, outline="green", width=5)
     draw.rectangle([(x, y), (x+text_w, y+text_h)], fill="green")
     draw.text((x, y), caption, fill="white", font=font)
     
